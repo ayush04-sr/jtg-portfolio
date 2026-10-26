@@ -10,7 +10,7 @@ nav{
     align-items: center;
     padding: 15px 40px;
     background-color: white;
-
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .logo{
@@ -49,6 +49,8 @@ nav{
     line-height: 1.7;
 }
 
+/* Hero Section */
+
 .hero-content h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: red;
@@ -67,8 +69,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 55vh;
-    padding: 60px 10%;
+    min-height: 85vh;
+    padding: 0px 5% 60px;
 }
 
 .hero-content button:hover{
@@ -105,7 +107,87 @@ nav{
 }
 
 .hero-image img{
-    width: 550px;
+    width: 700px;
     height: auto;
     object-fit: contain;
+}
+.hire-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.hire-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* SKILLS SECTION */
+
+.skills {
+    padding: 70px 10%;
+    background-color: #f8fafc;
+}
+
+.skills-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skills-container h2 {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.skills-container > p {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* SKILL CARDS */
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    min-height: 140px;
+    padding: 25px 20px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
