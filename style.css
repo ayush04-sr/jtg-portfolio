@@ -138,6 +138,7 @@ nav{
     text-align: center;
     color: #222;
     margin-bottom: 12px;
+    background-color: gold;
 }
 
 .skills-container > p {
@@ -209,6 +210,7 @@ nav{
     text-align: center;
     color: #222;
     margin-bottom: 12px;
+    background-color: gold;
 }
 
 .education-container > p {
@@ -276,6 +278,7 @@ nav{
     text-align: center;
     color: #222;
     margin-bottom: 12px;
+    background-color: gold;
 }
 
 .projects-container > p {
@@ -331,5 +334,81 @@ nav{
 @media (max-width: 768px) {
     .projects-list {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Recommendation Section */
+.recommendation {
+    padding: 70px 10%;
+    background-color:beige;
+    color: #222;
+}
+.recommendation-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.recommendation-container h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #222;
+    background-color: gold;
+}
+.recommendation-container > p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+.recommendation-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+.recommendation-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.09);
+}
+.recommendation-card h3 {
+    font-size: 20px;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+.recommendation-card h4 {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+.recommendation-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+}
+@media (max-width: 768px) {
+
+    .recommendation {
+        padding: 50px 6%;
+    }
+
+    .recommendation-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .recommendation-container h2 {
+        font-size: 28px;
+    }
+
+    .recommendation-card {
+        padding: 22px;
     }
 }
